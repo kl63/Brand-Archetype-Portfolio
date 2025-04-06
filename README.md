@@ -1,34 +1,36 @@
-# Build with Brilliance - Creative Portfolio Template
+# Brand Archetype Portfolio
 
-A modern, AI-powered Next.js template for creative professionals to showcase their work, connect with clients, and automate their workflow.
+A modern, AI-powered Next.js portfolio site for creative professionals to showcase their work, connect with clients, and automate their social media workflow.
 
 ## 🧠 Vision
 
-Build a modular, AI-powered personal site where **creatives and visionaries** can showcase their story, connect through rich media, and spark new collaborations through automation and innovation.
+A modular, AI-powered personal site where **creatives and visionaries** can showcase their story, connect through rich media, and spark new collaborations through automation and innovation.
 
 ## 🎭 Archetype: The Creator
 
-This template is designed for the **Creator** archetype:
+This portfolio is designed for the **Creator** archetype:
 - Values: originality, imagination, self-expression
 - Voice: visionary, inspiring, artistic
 - Visuals: vibrant colors, abstract or design-forward elements
 
 ## 🛠 Core Features
 
-- 🎨 **Creator Archetype Engine**: Shapes site tone, visuals, chatbot, and social content
-- 🧠 **AI Media Generator**: Generates creative bios, visuals, taglines, and more
-- 🤖 **Zapier Chatbot**: Welcomes users and guides them to action in a casual, expressive tone
-- 📅 **Calendly Scheduler**: Books creative sessions or intro calls
-- 📢 **Social Content Engine**: Templates for inspirational or behind-the-scenes social posts
-- 🌐 **Responsive Site**: Deployed and customized with your creative identity in mind
+- 🎨 **Modern UI Components**: Sleek design with animations, glass effects, and responsive layouts
+- 🧠 **Social Media Content Generator**: Create platform-specific content with AI assistance
+- 🤖 **Zapier Chatbot**: Automate social media workflows and content scheduling
+- 📅 **Calendly Integration**: Book meetings directly through the portfolio site
+- 📱 **Responsive Design**: Looks great on all devices from mobile to desktop
+- ✨ **Interactive Elements**: Engaging hover effects, animations, and user interactions
 
 ## ⚙️ Tech Stack
 
-- **Frontend**: Next.js + TailwindCSS
-- **AI**: OpenAI, DALL·E, Suno
-- **Automation**: Zapier
-- **Scheduling**: Calendly
-- **Hosting**: Vercel / DigitalOcean
+- **Frontend**: Next.js 14+ with React and TypeScript
+- **Styling**: TailwindCSS with custom components
+- **Animation**: Framer Motion for smooth transitions
+- **UI Components**: Radix UI for accessible components
+- **Scheduling**: Calendly integration
+- **Automation**: Zapier integration
+- **Hosting**: Vercel
 
 ## 🚀 Getting Started
 
@@ -41,8 +43,8 @@ This template is designed for the **Creator** archetype:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/build-with-brilliance.git
-cd build-with-brilliance
+git clone https://github.com/kl63/Brand-Archetype-Portfolio.git
+cd Brand-Archetype-Portfolio
 ```
 
 2. Install dependencies:
@@ -68,27 +70,33 @@ yarn dev
 1. Update the site content in `src/app/page.tsx` with your own information
 2. Replace placeholder images in the `public` folder with your own
 3. Customize colors and styling in `tailwind.config.js`
-4. Update the Calendly link in `src/components/CalendlyEmbed.tsx`
+4. Update the Calendly link in `src/components/ContactSection.tsx`
 
-### AI Integration
+### Social Media Integration
 
-1. For OpenAI integration, add your API key to the environment variables
-2. For Zapier chatbot, connect your Zapier account and update the webhook URLs
+1. Customize the social media content generator prompts in `src/components/SocialContentGenerator.tsx`
+2. Connect your Zapier account to automate content scheduling
+3. Update the chatbot suggestions in `src/components/ZapierChatbot.tsx`
 
 ## 📦 Project Structure
 
 ```
-build-with-brilliance/
-├── public/              # Static assets
+brand-archetype-portfolio/
+├── public/              # Static assets and images
 ├── src/                 # Source code
 │   ├── app/             # Next.js app router
 │   │   ├── globals.css  # Global styles
 │   │   ├── layout.tsx   # Root layout
 │   │   └── page.tsx     # Home page
-│   └── components/      # Reusable components
-│       ├── Chatbot.tsx  # Interactive chatbot
-│       ├── CalendlyEmbed.tsx # Calendly integration
-│       └── SocialContent.tsx # Social media content
+│   ├── components/      # Reusable components
+│   │   ├── CreativeHero.tsx        # Hero section
+│   │   ├── PortfolioNavBar.tsx     # Navigation bar
+│   │   ├── ProjectCard.tsx         # Project showcase
+│   │   ├── ContactSection.tsx      # Contact form and Calendly
+│   │   ├── SocialContentGenerator.tsx # Social media content
+│   │   ├── ZapierChatbot.tsx       # Automation assistant
+│   │   └── ui/                     # UI components
+│   └── lib/             # Utility functions
 ├── .documentation/      # Project documentation
 ├── package.json         # Dependencies
 ├── tailwind.config.js   # TailwindCSS configuration
@@ -103,5 +111,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Next.js team for the amazing framework
 - TailwindCSS for the utility-first CSS framework
-- OpenAI for the AI capabilities
+- Framer Motion for the animation library
+- Radix UI for accessible component primitives
 - Calendly for the scheduling integration
+- Zapier for the automation capabilities
